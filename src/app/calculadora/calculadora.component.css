@@ -1,0 +1,44 @@
+.calculadora-component {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.calculadora-component .button {
+    all: unset;
+    padding: 9px 18px;
+    color: #F5F5F5;
+    background-color: blueviolet;
+    transition: 100ms;
+    max-width: max-content;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculadora-component .button:hover {
+    background-color: darkorchid;
+}
+
+.calculadora-component .campos {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.calculadora-component input {
+    width: 100%;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.calculadora-component select {
+    width: 50%;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}

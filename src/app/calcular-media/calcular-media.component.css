@@ -1,0 +1,41 @@
+.calcular-media {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    font-family: sans-serif;
+}
+
+.calcular-media .input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calcular-media label {
+    font-size: 1.125rem;
+    font-family: sans-serif;
+}
+
+.calcular-media input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1.125rem;
+}
+
+.calcular-media button {
+    all: unset;
+    padding: 9px 18px;
+    color: #F5F5F5;
+    background-color: blueviolet;
+    transition: 100ms;
+    max-width: max-content;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calcular-media button:hover {
+    background-color: darkorchid;
+}

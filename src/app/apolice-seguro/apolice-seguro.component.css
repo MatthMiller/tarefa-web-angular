@@ -1,0 +1,45 @@
+.apolice-seguro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    font-family: sans-serif;
+}
+
+.apolice-seguro .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apolice-seguro label {
+    font-size: 1.125rem;
+    font-family: sans-serif;
+}
+
+.apolice-seguro input {
+    padding: 8px 12px;
+    font-size: 1.125rem;
+}
+
+.apolice-seguro select {
+    padding: 8px 12px;
+    font-size: 1.125rem;
+}
+
+.apolice-seguro button {
+    all: unset;
+    padding: 9px 18px;
+    color: #F5F5F5;
+    background-color: blueviolet;
+    transition: 100ms;
+    max-width: max-content;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apolice-seguro button:hover {
+    background-color: darkorchid;
+}

@@ -1,0 +1,42 @@
+<div class="cadastro-aluno">
+  <div class="input-container">
+    <div class="input-container">
+      <label for="nome">Nome</label>
+      <input placeholder="Insira aqui seu nome" type="text" id="nome" [(ngModel)]="nome">
+    </div>
+
+  </div>
+
+  <div class="input-container">
+    <label for="ra">RA</label>
+    <input placeholder="Insira aqui seu RA" type="text" id="ra" [(ngModel)]="ra">
+  </div>
+
+  <div class="input-container">
+    <label for="email">E-mail:</label>
+    <input placeholder="Insira aqui seu e-mail" type="email" id="email" [(ngModel)]="email">
+  </div>
+
+  <div class="input-container">
+    <label for="cel">Celular</label>
+    <input placeholder="Insira aqui seu telefone" type="tel" id="cel" [(ngModel)]="cel">
+  </div>
+
+  <div class="cadastro-aluno">
+    <button (click)="verificarPreenchimento()">Cadastrar Aluno</button>
+  </div>
+
+  <div class="cadastro-aluno">
+    <div *ngIf="erroPreenchimento" class="erro">Por favor, preencha todos os campos.</div>
+    <div *ngIf="mostrarDados && !erroPreenchimento">
+      <h3>Dados atuais digitados:</h3>
+      <ul>
+        <li>Nome: {{nome}}</li>
+        <li>RA: {{ra}}</li>
+        <li>E-mail: {{email}}</li>
+        <li>Celular: {{cel}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>

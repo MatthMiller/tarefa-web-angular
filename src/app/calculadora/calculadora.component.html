@@ -1,0 +1,16 @@
+<div class="calculadora-component">
+  <div class="campos">
+    <input type="number" id="numero1" [(ngModel)]="numero1">
+    <select id="operacao" [(ngModel)]="operacao">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="numero2" [(ngModel)]="numero2">
+  </div>
+
+  <button class="button" (click)="calcular()">Calcular</button>
+
+  <p>{{ resultado }}</p>
+</div>

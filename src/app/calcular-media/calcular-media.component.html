@@ -1,0 +1,28 @@
+<div class="calcular-media">
+  <div class="input-container">
+    <label for="ac1">AC1:</label>
+    <input placeholder="Insira aqui sua nota AC1" type="number" id="ac1" [(ngModel)]="ac1">
+  </div>
+
+  <div class="input-container">
+    <label for="ac2">AC2:</label>
+    <input placeholder="Insira aqui sua nota AC2" type="number" id="ac2" [(ngModel)]="ac2">
+  </div>
+
+  <div class="input-container">
+    <label for="ag">AG:</label>
+    <input placeholder="Insira aqui sua nota AG" type="number" id="ag" [(ngModel)]="ag">
+  </div>
+
+  <div class="input-container">
+    <label for="af">AF:</label>
+    <input placeholder="Insira aqui sua nota AF" type="number" id="af" [(ngModel)]="af">
+  </div>
+
+  <button (click)="calcularMedia()">Calcular</button>
+
+  <div *ngIf="media !== null">
+    <p>Média Final: {{ media }}</p>
+    <p>Resultado: {{ resultado }}</p>
+  </div>
+</div>

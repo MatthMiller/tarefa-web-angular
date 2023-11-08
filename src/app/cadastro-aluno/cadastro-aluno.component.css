@@ -1,0 +1,59 @@
+.cadastro-aluno {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    font-family: sans-serif;
+}
+
+.cadastro-aluno .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cadastro-aluno label {
+    font-size: 1.125rem;
+    font-family: sans-serif;
+}
+
+.cadastro-aluno input {
+    padding: 8px 12px;
+    font-size: 1.125rem;
+}
+
+.cadastro-aluno h3 {
+    padding-top: 24px;
+}
+
+.cadastro-aluno h3,
+.cadastro-aluno ul {
+    margin: 0px;
+}
+
+.cadastro-aluno ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cadastro-aluno .erro {
+    color: red;
+}
+
+.cadastro-aluno button {
+    all: unset;
+    padding: 9px 18px;
+    color: #F5F5F5;
+    background-color: blueviolet;
+    transition: 100ms;
+    max-width: max-content;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastro-aluno button:hover {
+    background-color: darkorchid;
+}
